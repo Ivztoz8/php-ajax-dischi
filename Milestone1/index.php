@@ -12,7 +12,7 @@ require __DIR__ . '/database.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
-    <title>Vue-PHP-Discs</title>
+    <title>Vue-PHP-Discs MLST 1</title>
 </head>
 <body>
     <div id="root">
@@ -24,14 +24,14 @@ require __DIR__ . '/database.php';
             </div>
         </header>
         <main>
-            <div class="container">
-                <div class="row row-cols-3 g-3 d-flex justify-content-center align-items-start">
+            <div class="container-md">
+                <div class="row row-cols-3 g-3 d-flex align-items-start">
                 <!-- Inizio ciclo -->    
                     <?php foreach($database as $element){?>
                         <div>
-                            <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                            <div class="col-6 d-flex flex-column justify-content-center align-items-center bg-secondary">
                                     <img src="<?php echo $element['poster'] ?>" class="img-fluid" alt="">
-                                    <h2><?php echo $element['title'] ?></h2>
+                                    <h4><?php echo $element['title'] ?></h4>
                                     <span><?php echo $element['author'] ?></span>
                                     <span><?php echo $element['year'] ?></span>
                             </div>
